@@ -34,7 +34,7 @@ export class BlogComponent implements OnInit {
     let resultado = "";
 
     this.ArrNoticias.forEach(noti=>{
-      resultado+= `<article class="articleWrapper"><h3 class="titulonoti">${noti.titulo}</h3><div class='imagenwrapper' ><img class='imagennoti' src='${noti.imagen}'></div><p class="textonoti">${noti.texto}</p class="fechanoti"><p>${noti.fecha}</p></article>`
+      resultado+= `<article class="articleWrapper"><h3 class="titulonoti">${noti.titulo}</h3><div class='imagenwrapper' ><img class='imagennoti' src='${noti.imagen}'></div><div class='contNoti'><p class="textonoti">${noti.texto}</p><p class="fechanoti">${noti.fecha}</p></div></article>`
     })
     
     return resultado;

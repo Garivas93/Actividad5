@@ -16,6 +16,8 @@ body{
 
 .seccionFormulario{
     border-bottom: solid gray 2px;
+    padding: 20px;
+    background-color: lightblue;
 }
 
 .button{
@@ -24,11 +26,19 @@ body{
     margin-bottom: 10px;
 }
 
+.seccionNoticias{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aticleWrapper {
+    display: flex;
+    
+}
 .row{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
     
 }
 
@@ -38,14 +48,34 @@ body{
     border: 1px solid gray;
     box-shadow: 1px 1px 10px #ccc;
 }
+.contNoti{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
 
 .imagennoti{
+    display: flex;
     max-width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
 .titulonoti{
     color: navy;
     display: flex;
     justify-content: center;
+    height: 80px;
     padding: 5px;
+    align-items: center;
+}
+
+.imagenwrapper{
+    height: auto;
+}
+
+.fechanoti{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
 }
