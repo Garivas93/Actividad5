@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.seccionFormulario{
+    border-bottom: solid gray 2px;
+}
+
+.button{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.row article{
+    width: calc(33.33% - 50px);
+    padding: 20px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.imagen{
+    max-width: 100%;
+    object-fit: cover;
+}

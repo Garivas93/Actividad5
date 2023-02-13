@@ -1,0 +1,28 @@
+<section class="seccionFormulario">
+  <div class="formulario">
+    <label for="titulo">Introduce un titulo:</label>
+    <input type="text" id="titulo" [(ngModel)]="titulo" />
+
+    <label for="imagen">Introduce el link de una imagen: </label>
+    <input type="text" id="imagen" [(ngModel)]="imagen" />
+
+    <label for="texto">Introduce el parrafo de la noticia:</label>
+    <textarea
+      name="texto"
+      id="texto"
+      rows="10"
+      cols="25"
+      [(ngModel)]="texto"
+    ></textarea>
+
+    <label for="fecha"> Fecha de publicación </label>
+    <input type="any" id="fecha" [(ngModel)]="fecha" />
+
+    <button class="button" (click)="recogerDatos()">Cargar</button>
+  </div>
+</section>
+<section>
+  <h1>Listado de noticias</h1>
+  <!--  <ul [innerHTML]="cargarDatos()"></ul> -->
+  <div class="row" [innerHTML]="cargarDatos()"></div>
+</section>

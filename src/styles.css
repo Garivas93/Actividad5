@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.seccionFormulario{
+    border-bottom: solid gray 2px;
+}
+
+.button{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    
+}
+
+.row article{
+    width: calc(33.33% - 50px);
+    padding: 20px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.imagennoti{
+    max-width: 100%;
+}
+
+.titulonoti{
+    color: navy;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
