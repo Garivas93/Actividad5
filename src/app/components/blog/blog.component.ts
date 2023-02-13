@@ -72,8 +72,4 @@ export class BlogComponent implements OnInit {
 
   }
 
-  guardarDato($event: any) : void {
-    this.ArrNoticias.push($event);
-  }
-
 }
